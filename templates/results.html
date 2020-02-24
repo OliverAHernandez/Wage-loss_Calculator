@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style media="screen">
+	body{
+	  font-family: 'Montserrat';
+	  color: #FDFFFC;
+	  text-align: center;
+	  background-color: #011627;
+	  border: 60px solid #2EC4B6;
+	  border-top: 0px;
+	  /*border-bottom: 0px;*/
+	  margin: 0px;
+	}
+	#stats_table{
+       width:70%;
+       margin-left:15%;
+       margin-right:15%;
+	   padding: 10;
+	   color: #FDFFFC
+	   display: flex;
+	   flex-direction: column;
+	}
+	table, th, td {
+  border: 1px solid white ;
+}
+	}
+	p{
+	  color: #FDFFFC;
+	  padding-top: 5%;
+	  padding-left: 20%;
+	  padding-right: 20%;
+	}
+	#image_id{
+		width: 80%;
+		height: auto;
+	}
+	.userinput{
+	  font-size: 1.5em;
+	  margin-bottom: 10px;
+	}
+
+	h2{
+	  margin-bottom: 5%;
+	}
+
+	#severity_val{
+	  border-radius: 25px;
+	  background: #FF9F1C;
+	  height: 80px;
+	  width: 150px;
+	  font-family: "Montserrat";
+	  font-size: 1.2em;
+	  margin-bottom: 4px;
+
+	}
+	</style>
+	<meta charset="utf-8">
+	<title>Results</title>
+    <link rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+<h1>Estimated Results</h1>
+<!-- this is the updated version -->
+<table id="stats_table">
+  <tr>
+    <th>Total Daily Loss</th>
+    <th>People Displaced</th>
+    <th>percentage of People Displaced</th>
+	<th>Total Zipcodes affected</th>
+	<th>Percentage of earners</th>
+  </tr>
+  <tr>
+    <td>{{total_daily_loss}}</td>
+    <td>{{displaced}}</td>
+    <td>{{percent_displaced}}%</td>
+	<td>{{affected_zips_count}}</td>
+	<td>{{percent_earners}}%</td>
+  </tr>
+</table>
+<br><br>
+<h2>Inferred Metrics</h2>
+<table id="stats_table">
+  <tr>
+    <th>Total Population</th>
+    <th>Total Households</th>
+    <th>Average Population Density</th>
+	<th>Total Businesses in Area</th>
+  </tr>
+  <tr>
+    <td>{{total_population}}</td>
+    <td>{{total_households}}</td>
+    <td>{{average_population_density}}</td>
+	<td>{{total_businesses}}</td>
+  </tr>
+</table>
+<br><br>
+<img src={{url}} alt="" id="image_id">
+<p></p>
+</body>
+</html>

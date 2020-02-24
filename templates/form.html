@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style media="screen">
+    body{
+      font-family: 'Montserrat';
+      color: #FDFFFC;
+      text-align: center;
+      background-color: #011627;
+      border: 60px solid #2EC4B6;
+      border-top: 0px;
+      /*border-bottom: 0px;*/
+      margin: 0px;
+    }
+    div{
+     display: inline-block;
+    }
+    p{
+      color: #FDFFFC;
+      padding-top: 5%;
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+    .button{
+        width:80px;
+        height: 30px;
+    }
+    .userinput{
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      width: 150px;
+    }
+    div{
+        align-items: flex-start;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    h3{
+        text-align: left;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    h2{
+      text-align: center;
+
+    }
+    .description{
+        text-align: left;
+        padding-left: 5%;
+    }
+    #severity_val{
+      border-radius: 25px;
+      background: #FF9F1C;
+      height: 80px;
+      width: 150px;
+      font-family: "Montserrat";
+      font-size: 1.2em;
+      margin-bottom: 4px;
+
+    }
+    </style>
+    <meta charset="utf-8">
+    <title>Wage-loss Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>Welcome to the Wage-loss Calculator</h1>
+    <!-- add some kind of description of what we are trying to do -->
+    <h2 class="description">Project Description:</h2>
+    <h3>  <br />
+The goal of this project is to predict wage loss after natural disasters. <br />
+To accomplish that, we created an algorithm that uses real world data to infer metrics used to predict wage-loss given a central zip-code, a type of natural disaster, and the severity of the natural disaster provided by you (the user). With that information, our algorithm simulates the effect of a given natural disaster and generates the inferred metrics that we then pass into our predictive model.<br />
+Finally, our model predicts the total displaced people, which we used to estimate the total daily wage-loss that  we display back to you the end user.
+ </h3>
+
+    <p></p>
+
+  </body>
+
+  <h2>Calculate wage-loss from a central zip code!</h2>
+  <form class="disaster_form" action="/submit" method="get">
+    <div class="inputs">
+        <div class="">
+            <label for="disaster_type">Disaster type:</label><br>
+            <select class="userinput" name="disaster_type" ><br>
+                <option value="earthquake">Earthquake</option>
+                <option value="hurricane">Hurricane</option>
+                <option value="tornado">Tornado</option>
+                <option value="wildfire">Wildfire</option>
+
+    </select><br>
+        </div>
+
+        <div class="">
+
+
+            <label for="severity">Select severity</label><br>
+            <input class="userinput" type="number" name="severity" id="" min="0" max="5" step="0.1" required>
+        </div>
+        <div class="">
+            <label for="central_zip">Enter Zipcode</label><br>
+            <input class="userinput" type="text" name="central_zip" value="" required>
+        </div>
+        <div>
+            <button class="button" type="submit">Submit</button>
+        </div>
+    </div>
+
+    <!-- <input class="userinput"type="range" name="severity" value="" min="0" max="5" step="0.1" list="severity_val">
+
+
+    <datalist class="userinput" id="severity_val">
+    <option value="0" label="0"></option>
+    <option value="0.5"></option>
+    <option value="1"></option>
+    <option value="1.5"></option>
+    <option value="2"></option>
+    <option value="2.5" label="2.5"></option>
+    <option value="3"></option>
+    <option value="3.5"></option>
+    <option value="4"></option>
+    <option value="4.5"></option>
+    <option value="5" label="5"></option>
+    </datalist> -->
+
+
+
+  </form>
+</html>
