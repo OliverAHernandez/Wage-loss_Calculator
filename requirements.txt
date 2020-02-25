@@ -1,0 +1,9 @@
+pandas
+requests
+bs4
+numpy
+matplotlib
+census
+us
+sklearn
+shapely
