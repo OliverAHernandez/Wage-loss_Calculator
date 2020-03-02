@@ -113,4 +113,9 @@ Some of the data needed to solve this problem can be obtained via scalable means
 - Determine the optimal model via testing and optimize the peramiters and refit the the model to the new data.<br>
 
 ---
+# Flask App
 
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+## LIVE PORTFOLIO APP...
+https://my-portfolio-with-flask.herokuapp.com/
