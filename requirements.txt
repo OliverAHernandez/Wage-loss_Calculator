@@ -7,4 +7,3 @@ census
 us
 sklearn
 shapely
-scikitlearn
