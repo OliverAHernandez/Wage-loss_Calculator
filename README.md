@@ -54,10 +54,11 @@ Project goals for this client are twofold:
 - Deliver an interactive tool with which users can input factors and generate location-specific wage-loss estimates.
 
 ---
+# How to get started 
 ## Step 1 - Launch natural_disaster_app
-### Step 2 - Select a disaster, it's severity, and a zip code 
+## Step 2 - Select a disaster, it's severity, and a zip code 
 <img src="./images/form.png"><br>
-### Step 3 - Observe the results for yourself
+## Step 3 - Observe the results for yourself
 <img src="./images/results.png"><br>
 
 
