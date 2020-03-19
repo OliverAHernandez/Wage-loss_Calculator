@@ -40,7 +40,7 @@
 
 ## 2.0 Executive Summary
 
-The client, New Light Technologies, provided the following project brief describing the problem to be explored. 
+The client, New Light Technologies, provided the following project brief describing the problem to be explored.
 
 ### Problem Statement
 
@@ -54,6 +54,13 @@ Project goals for this client are twofold:
 - Deliver an interactive tool with which users can input factors and generate location-specific wage-loss estimates.
 
 ---
+## Step 1 - Launch natural_disaster_app
+### Step 2 - Select a disaster, it's severity, and a zip code 
+<img src="./images/form.png"><br>
+### Step 3 - Observe the results for yourself
+<img src="./images/results.png"><br>
+
+
 ## 3.0 Description of Data
 
 ### 3.1 Size
@@ -74,7 +81,7 @@ Project goals for this client are twofold:
 
 - https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
 - https://www.internal-displacement.org/
-- https://www.simplemaps.com 
+- https://www.simplemaps.com
 - https://www.fema.gov/
 
 ### 3.3 Data Dictionary
@@ -113,4 +120,3 @@ Some of the data needed to solve this problem can be obtained via scalable means
 - Determine the optimal model via testing and optimize the peramiters and refit the the model to the new data.<br>
 
 ---
-

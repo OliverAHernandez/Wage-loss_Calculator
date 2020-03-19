@@ -25,7 +25,7 @@ def form():
 
 def get_affected_area(central_zip, severity):
 
-    center = (float(df[df['ZCTA'] == central_zip]['lat']), float(df[df['ZCTA'] == central_zip]['lng']))
+    center = (int(df[df['ZCTA'] == central_zip]['lat']), int(df[df['ZCTA'] == central_zip]['lng']))
 
     polygon = Polygon([
         (center[0] - severity, center[1]), 
