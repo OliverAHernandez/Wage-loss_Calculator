@@ -60,7 +60,7 @@ Project goals for this client are twofold:
 <img src="./images/form.png"><br>
 ## Step 3 - Observe the results for yourself
 <img src="./images/results.png"><br>
-
+---
 
 ## 3.0 Description of Data
 
